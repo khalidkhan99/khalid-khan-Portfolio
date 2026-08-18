@@ -1,0 +1,6 @@
+Your Name
+Developer & AI Builder
+
+Replace this placeholder with your actual resume (a .pdf or .docx file named resume.pdf / resume.docx in the public/ folder), then update the "Download Resume" link in src/components/Experience.tsx.
+
+Contact: hello@yourname.dev

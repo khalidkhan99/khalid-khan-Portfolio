@@ -1,0 +1,76 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 1105 >>
+stream
+BT
+/F1 24 Tf
+72 720 Td
+(KHALID KHAN) Tj
+/F1 14 Tf
+0 -34 Td
+(Software Engineer & AI Developer) Tj
+/F2 11 Tf
+0 -30 Td
+(------------------------------------------) Tj
+0 -22 Td
+(Email: khalidkhan99012@gmail.com) Tj
+0 -18 Td
+(Phone: 0335 2649604) Tj
+0 -18 Td
+(Location: Pakistan) Tj
+0 -18 Td
+(GitHub: github.com/khalidkhan99) Tj
+0 -18 Td
+(LinkedIn: linkedin.com/in/khalidkhan) Tj
+0 -30 Td
+(------------------------- SUMMARY -------------------------) Tj
+0 -22 Td
+(AI Developer with 4+ years building ML systems, LLM apps and) Tj
+0 -18 Td
+(production web applications with Python, TypeScript and React.) Tj
+0 -30 Td
+(---------------------- SELECTED PROJECTS -----------------------) Tj
+0 -22 Td
+(- AI Content Generator - RAG powered content platform) Tj
+0 -18 Td
+(- Deep Learning Pipeline - 98.2% accuracy image classifier) Tj
+0 -18 Td
+(- Real-Time Analytics Dashboard - 2k+ events/sec) Tj
+0 -30 Td
+(--------------------------- SKILLS ----------------------------) Tj
+0 -22 Td
+(Python, PyTorch, TensorFlow, LangChain, FastAPI, React, Next.js,) Tj
+0 -18 Td
+(Docker, Kubernetes, AWS, GCP, PostgreSQL, Redis) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000001408 00000 n 
+0000001483 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+1553
+%%EOF
