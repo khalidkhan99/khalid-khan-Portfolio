@@ -63,7 +63,14 @@ export function Typewriter({ phrases }: { phrases: string[] }) {
 
   return (
     <span className="inline-block min-h-[1.75em] w-full">
-      <span ref={spanRef} aria-label={phrases.join(", ")} className="gradient-cyan" />
+      <span
+        ref={spanRef}
+        aria-label={phrases.join(", ")}
+        className="gradient-cyan"
+        suppressHydrationWarning
+      >
+        {phrases[0]}
+      </span>
       <span
         className="animate-blink ml-1 inline-block h-[1em] w-[3px] translate-y-[0.15em] rounded-full bg-accent"
         aria-hidden="true"

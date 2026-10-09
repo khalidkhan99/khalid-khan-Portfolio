@@ -1,6 +1,73 @@
-Your Name
-Developer & AI Builder
+KHALID KHAN
+Full-Stack & Web Developer
+Email: khalidkhan99012@gmail.com
+Phone: +92 335 2649604
+Location: Pakistan (PKT / UTC+5)
+GitHub: https://github.com/khalidkhan99
+LinkedIn: https://www.linkedin.com/in/khalid-khan-dev
+Facebook: https://www.facebook.com/profile.php?id=61592632241241
+Instagram: https://www.instagram.com/khalid.dev99/
+Portfolio: https://khalid-khan-portfolio.vercel.app
 
-Replace this placeholder with your actual resume (a .pdf or .docx file named resume.pdf / resume.docx in the public/ folder), then update the "Download Resume" link in src/components/Experience.tsx.
+==================================================
+SUMMARY
+==================================================
+Computer Science student and Full-Stack Web Developer specializing in building modern, scalable web applications and high-performance digital tools. Experienced in engineering full-stack e-commerce platforms with Clerk authentication, Supabase PostgreSQL, and Stripe checkout, alongside client-side multi-utility web suites. Passionate about shipping clean, user-centric products.
 
-Contact: hello@yourname.dev
+==================================================
+CORE SKILLS
+==================================================
+- Languages: JavaScript, TypeScript, Python, HTML5, CSS3, SQL
+- Frontend: Next.js (App Router), React 19, Tailwind CSS v4, Framer Motion
+- Backend & Databases: Supabase (PostgreSQL with RLS), REST APIs, Cloudinary
+- Auth & Payments: Clerk Authentication, Stripe Checkout integration
+- Development & Deployment: Git, GitHub, Vercel, Vitest, Responsive Web Design
+
+==================================================
+LIVE PROJECTS
+==================================================
+1. Fashionstyle — Full-Stack E-Commerce Store
+   - Complete modern fashion e-commerce storefront with product catalogue, filtering, size selection, wishlist, cart, and order tracking.
+   - Integrated Clerk Authentication, Supabase PostgreSQL with Row Level Security, and Stripe test checkout.
+   - Built with Next.js 16, React 19, TypeScript, Tailwind CSS, and Cloudinary.
+   - Live Demo: https://e-commerce-fashion-style.vercel.app/
+   - GitHub: https://github.com/khalidkhan99/E-commerce
+
+2. AllTools Online — Free Developer & Utility Suite
+   - Comprehensive web platform featuring 30+ browser-based tools for images, PDFs, converters, formatters, and code generators.
+   - 100% private client-side processing with zero server uploads and instant performance.
+   - Built with JavaScript, modern web APIs, and responsive design.
+   - Live Demo: https://all-tools-tech.vercel.app/
+   - GitHub: https://github.com/khalidkhan99/all-tools
+
+3. Developer Portfolio
+   - Personal portfolio built with Next.js 16, TypeScript, and Tailwind CSS v4.
+   - Fully responsive, dark/light theme, interactive particle canvas, and SEO-optimized with JSON-LD schema.
+   - Live Demo: https://khalid-khan-portfolio.vercel.app
+   - GitHub: https://github.com/khalidkhan99/khalid-khan-Portfolio
+
+==================================================
+EXPERIENCE
+==================================================
+Freelance Full-Stack Developer | Self-employed
+2024 — Present
+- Architected and deployed 3 live web applications including Fashionstyle Store and AllTools Online.
+- Integrated Clerk auth, Supabase relational models with RLS, and Stripe payment flows.
+- Built 30+ client-side utility tools focused on privacy, zero server lag, and high accessibility.
+
+Freelance WordPress Developer | Self-employed
+2023 — Present
+- Designed, customized, and deployed 5+ responsive websites for clients.
+- Handled SEO setup, plugin architecture, and page speed optimization.
+
+==================================================
+EDUCATION & CERTIFICATIONS
+==================================================
+BS Computer Science
+2022 — Present
+- Focus on Software Engineering, Database Systems, and Modern Web Architecture.
+
+Certifications:
+- AI Essentials — Google (Coursera, 2024)
+- Python for Everybody — University of Michigan (Coursera, 2024)
+- CS50x — Harvard University (2024)

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -40,9 +41,22 @@ export function Navbar() {
           className="group flex items-center gap-2.5 font-mono text-lg font-bold text-heading"
           aria-label="Go to home"
         >
-          <span className="bg-gradient-primary flex size-8 items-center justify-center rounded-md text-sm text-white shadow-lg">
-            {site.initials}
-          </span>
+          {site.logo ? (
+            <span className="relative flex size-9 items-center justify-center overflow-hidden rounded-lg border border-border/80 bg-background p-0.5 shadow-md transition-all group-hover:scale-105 group-hover:border-accent/60 group-hover:shadow-[0_0_15px_-3px_rgba(0,242,254,0.35)]">
+              <Image
+                src={site.logo}
+                alt={site.name}
+                width={36}
+                height={36}
+                className="size-full rounded-[6px] object-cover"
+                priority
+              />
+            </span>
+          ) : (
+            <span className="bg-gradient-primary flex size-8 items-center justify-center rounded-md text-sm text-white shadow-lg">
+              {site.initials}
+            </span>
+          )}
           <span className="hidden sm:inline">
             Khalid<span className="gradient-cyan"> Khan</span>
           </span>

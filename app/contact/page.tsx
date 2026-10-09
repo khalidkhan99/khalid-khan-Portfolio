@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Contact } from "@/app/components/contact";
-import { ContactFaq } from "@/app/components/contact-extra";
+import {
+  Availability,
+  ContactFaq,
+  ContactValues,
+} from "@/app/components/contact-extra";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -21,7 +25,9 @@ export default function ContactPage() {
   return (
     <>
       <Contact />
+      <ContactValues />
       <ContactFaq />
+      <Availability />
     </>
   );
 }

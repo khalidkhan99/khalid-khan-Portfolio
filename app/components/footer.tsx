@@ -1,4 +1,13 @@
-import { DownloadIcon, GithubIcon, LinkedinIcon, XIcon } from "@/app/components/icons";
+import Image from "next/image";
+import {
+  DownloadIcon,
+  FacebookIcon,
+  GithubIcon,
+  InstagramIcon,
+  LinkedinIcon,
+  WhatsappIcon,
+  XIcon,
+} from "@/app/components/icons";
 import { site } from "@/app/data";
 
 export function Footer() {
@@ -8,11 +17,23 @@ export function Footer() {
     <footer className="border-t border-border bg-surface/40">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-5 py-10 sm:flex-row sm:px-8">
         <div className="flex items-center gap-2.5">
-          <span className="bg-gradient-primary flex size-7 items-center justify-center rounded-md text-xs font-bold text-white">
-            {site.initials}
-          </span>
+          {site.logo ? (
+            <span className="relative flex size-7 items-center justify-center overflow-hidden rounded-md border border-border/80 bg-background p-0.5 shadow-sm">
+              <Image
+                src={site.logo}
+                alt={site.name}
+                width={28}
+                height={28}
+                className="size-full rounded-[4px] object-cover"
+              />
+            </span>
+          ) : (
+            <span className="bg-gradient-primary flex size-7 items-center justify-center rounded-md text-xs font-bold text-white">
+              {site.initials}
+            </span>
+          )}
           <p className="text-sm text-body">
-            © {year} {site.name}. Built with Next.js & AI.
+            © {year} {site.name}. Built with Next.js.
           </p>
         </div>
 
@@ -29,6 +50,9 @@ export function Footer() {
           {[
             { href: site.github, label: "GitHub", Icon: GithubIcon },
             { href: site.linkedin, label: "LinkedIn", Icon: LinkedinIcon },
+            { href: site.whatsapp, label: "WhatsApp", Icon: WhatsappIcon },
+            { href: site.facebook, label: "Facebook", Icon: FacebookIcon },
+            { href: site.instagram, label: "Instagram", Icon: InstagramIcon },
             { href: site.twitter, label: "X (Twitter)", Icon: XIcon },
           ].map(({ href, label, Icon }) => (
             <a

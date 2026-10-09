@@ -2,12 +2,15 @@
 
 import { FormEvent, useState } from "react";
 import {
+  FacebookIcon,
   GithubIcon,
+  InstagramIcon,
   LinkedinIcon,
   MailIcon,
   MapPinIcon,
   PhoneIcon,
   SendIcon,
+  WhatsappIcon,
   XIcon,
 } from "@/app/components/icons";
 import { SectionHeading } from "@/app/components/section-heading";
@@ -105,6 +108,23 @@ export function Contact({
                   </div>
                 </a>
 
+                <a
+                  href={site.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center gap-4 rounded-xl border border-border bg-card p-4 transition-colors hover:border-emerald-400/60"
+                >
+                  <span className="inline-flex size-11 items-center justify-center rounded-lg bg-emerald-500 text-white shadow-md">
+                    <WhatsappIcon className="size-5" />
+                  </span>
+                  <div>
+                    <p className="text-xs text-dim">WhatsApp</p>
+                    <p className="text-sm font-medium text-bright group-hover:text-emerald-400">
+                      Chat on WhatsApp
+                    </p>
+                  </div>
+                </a>
+
                 <div className="flex items-center gap-4 rounded-xl border border-border bg-card p-4">
                   <span className="bg-gradient-primary inline-flex size-11 items-center justify-center rounded-lg text-white">
                     <MapPinIcon className="size-5" />
@@ -125,10 +145,13 @@ export function Contact({
                 <span className="h-px flex-1 bg-border" aria-hidden="true" />
               </div>
 
-              <div className="flex items-center gap-3">
+              <div className="flex flex-wrap items-center gap-3">
                 {[
                   { href: site.github, label: "GitHub", Icon: GithubIcon },
                   { href: site.linkedin, label: "LinkedIn", Icon: LinkedinIcon },
+                  { href: site.whatsapp, label: "WhatsApp", Icon: WhatsappIcon },
+                  { href: site.facebook, label: "Facebook", Icon: FacebookIcon },
+                  { href: site.instagram, label: "Instagram", Icon: InstagramIcon },
                   { href: site.twitter, label: "X (Twitter)", Icon: XIcon },
                 ].map(({ href, label, Icon }) => (
                   <a

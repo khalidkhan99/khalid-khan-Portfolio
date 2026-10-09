@@ -9,49 +9,161 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R >>
 endobj
 4 0 obj
-<< /Length 1105 >>
+<< /Length 4518 >>
 stream
 BT
-/F1 24 Tf
-72 720 Td
+/F1 22 Tf
+1 0 0 1 50 740 Tm
 (KHALID KHAN) Tj
-/F1 14 Tf
-0 -34 Td
-(Software Engineer & AI Developer) Tj
-/F2 11 Tf
-0 -30 Td
-(------------------------------------------) Tj
-0 -22 Td
-(Email: khalidkhan99012@gmail.com) Tj
-0 -18 Td
-(Phone: 0335 2649604) Tj
-0 -18 Td
-(Location: Pakistan) Tj
-0 -18 Td
-(GitHub: github.com/khalidkhan99) Tj
-0 -18 Td
-(LinkedIn: linkedin.com/in/khalidkhan) Tj
-0 -30 Td
-(------------------------- SUMMARY -------------------------) Tj
-0 -22 Td
-(AI Developer with 4+ years building ML systems, LLM apps and) Tj
-0 -18 Td
-(production web applications with Python, TypeScript and React.) Tj
-0 -30 Td
-(---------------------- SELECTED PROJECTS -----------------------) Tj
-0 -22 Td
-(- AI Content Generator - RAG powered content platform) Tj
-0 -18 Td
-(- Deep Learning Pipeline - 98.2% accuracy image classifier) Tj
-0 -18 Td
-(- Real-Time Analytics Dashboard - 2k+ events/sec) Tj
-0 -30 Td
-(--------------------------- SKILLS ----------------------------) Tj
-0 -22 Td
-(Python, PyTorch, TensorFlow, LangChain, FastAPI, React, Next.js,) Tj
-0 -18 Td
-(Docker, Kubernetes, AWS, GCP, PostgreSQL, Redis) Tj
+/F1 12 Tf
+1 0 0 1 50 722 Tm
+(Full-Stack & Web Developer  |  Pakistan \(UTC+5\)) Tj
+/F2 9.5 Tf
+1 0 0 1 50 706 Tm
+(Email: khalidkhan99012@gmail.com   |   Phone: +92 335 2649604) Tj
+/F2 9.5 Tf
+1 0 0 1 50 692 Tm
+(GitHub: github.com/khalidkhan99   |   LinkedIn: linkedin.com/in/khalid-khan-dev) Tj
+/F2 9.5 Tf
+1 0 0 1 50 678 Tm
+(Portfolio: khalid-khan-portfolio.vercel.app) Tj
+/F2 9 Tf
+1 0 0 1 50 664 Tm
+(-----------------------------------------------------------------------------------------------------------------------------------) Tj
+/F1 12 Tf
+1 0 0 1 50 648 Tm
+(PROFESSIONAL SUMMARY) Tj
+/F2 9.5 Tf
+1 0 0 1 50 632 Tm
+(Computer Science student and Full-Stack Developer building modern, production-grade web applications.) Tj
+/F2 9.5 Tf
+1 0 0 1 50 618 Tm
+(Experienced in engineering full-stack e-commerce platforms with Clerk auth, Supabase, and Stripe, alongside) Tj
+/F2 9.5 Tf
+1 0 0 1 50 604 Tm
+(browser-based utility suites and modern Next.js solutions. Passionate about clean UI, security, and performance.) Tj
+/F1 12 Tf
+1 0 0 1 50 582 Tm
+(TECHNICAL SKILLS) Tj
+/F1 9.5 Tf
+1 0 0 1 50 566 Tm
+(Frontend & UI:) Tj
+/F2 9.5 Tf
+1 0 0 1 160 566 Tm
+(Next.js 16 \(App Router\), React 19, TypeScript, Tailwind CSS v4, Framer Motion) Tj
+/F1 9.5 Tf
+1 0 0 1 50 552 Tm
+(Backend & Database:) Tj
+/F2 9.5 Tf
+1 0 0 1 160 552 Tm
+(Supabase \(PostgreSQL with RLS\), REST APIs, Cloudinary, Node.js, Python) Tj
+/F1 9.5 Tf
+1 0 0 1 50 538 Tm
+(Auth & Payments:) Tj
+/F2 9.5 Tf
+1 0 0 1 160 538 Tm
+(Clerk Authentication, Stripe Checkout integration, Webhooks) Tj
+/F1 9.5 Tf
+1 0 0 1 50 524 Tm
+(Tools & Deployment:) Tj
+/F2 9.5 Tf
+1 0 0 1 160 524 Tm
+(Git, GitHub, Vercel, Responsive Web Design, Vitest, Zod) Tj
+/F1 12 Tf
+1 0 0 1 50 502 Tm
+(LIVE PROJECTS) Tj
+/F1 10 Tf
+1 0 0 1 50 486 Tm
+(1. Fashionstyle E-Commerce Store) Tj
+/F2 9 Tf
+1 0 0 1 230 486 Tm
+([Live: e-commerce-fashion-style.vercel.app | Code: github.com/khalidkhan99/E-commerce]) Tj
+/F2 9.5 Tf
+1 0 0 1 62 472 Tm
+(- Full-stack fashion store with catalogue browsing, filtering, size selection, wishlist, cart, and tracking.) Tj
+/F2 9.5 Tf
+1 0 0 1 62 458 Tm
+(- Built with Next.js 16, React 19, Clerk Auth, Supabase PostgreSQL with RLS, Stripe, and Cloudinary.) Tj
+/F1 10 Tf
+1 0 0 1 50 440 Tm
+(2. AllTools Online Platform) Tj
+/F2 9 Tf
+1 0 0 1 200 440 Tm
+([Live: all-tools-tech.vercel.app | Code: github.com/khalidkhan99/all-tools]) Tj
+/F2 9.5 Tf
+1 0 0 1 62 426 Tm
+(- Comprehensive web utility platform featuring 30+ browser tools for images, PDFs, converters, and code.) Tj
+/F2 9.5 Tf
+1 0 0 1 62 412 Tm
+(- 100% private client-side processing with zero server file uploads and instant responsive performance.) Tj
+/F1 10 Tf
+1 0 0 1 50 394 Tm
+(3. Personal Portfolio) Tj
+/F2 9 Tf
+1 0 0 1 170 394 Tm
+([Live: khalid-khan-portfolio.vercel.app | Code: github.com/khalidkhan99/khalid-khan-Portfolio]) Tj
+/F2 9.5 Tf
+1 0 0 1 62 380 Tm
+(- Modern web developer portfolio built with Next.js, React, TypeScript, and Tailwind CSS.) Tj
+/F2 9.5 Tf
+1 0 0 1 62 366 Tm
+(- Dark/light mode, animated particle canvas, SEO schema markup \(JSON-LD\), and contact form.) Tj
+/F1 12 Tf
+1 0 0 1 50 344 Tm
+(EXPERIENCE) Tj
+/F1 10 Tf
+1 0 0 1 50 328 Tm
+(Freelance Full-Stack Developer) Tj
+/F2 9.5 Tf
+1 0 0 1 215 328 Tm
+(|  Self-Employed) Tj
+/F2 9.5 Tf
+1 0 0 1 470 328 Tm
+(2024 - Present) Tj
+/F2 9.5 Tf
+1 0 0 1 62 314 Tm
+(- Architected and shipped 3 live web applications including Fashionstyle Store and AllTools Online.) Tj
+/F2 9.5 Tf
+1 0 0 1 62 300 Tm
+(- Integrated Clerk authentication, Supabase relational models with RLS, and Stripe payment flows.) Tj
+/F1 10 Tf
+1 0 0 1 50 282 Tm
+(Freelance WordPress Developer) Tj
+/F2 9.5 Tf
+1 0 0 1 220 282 Tm
+(|  Self-Employed) Tj
+/F2 9.5 Tf
+1 0 0 1 470 282 Tm
+(2023 - Present) Tj
+/F2 9.5 Tf
+1 0 0 1 62 268 Tm
+(- Delivered 5+ websites for clients with customized responsive designs and SEO optimization.) Tj
+/F1 10 Tf
+1 0 0 1 50 250 Tm
+(Computer Science Student) Tj
+/F2 9.5 Tf
+1 0 0 1 195 250 Tm
+(|  University) Tj
+/F2 9.5 Tf
+1 0 0 1 470 250 Tm
+(2022 - Present) Tj
+/F2 9.5 Tf
+1 0 0 1 62 236 Tm
+(- Core focus on Software Engineering, Database Systems, and Modern Full-Stack Web Architecture.) Tj
+/F1 12 Tf
+1 0 0 1 50 214 Tm
+(CERTIFICATIONS) Tj
+/F2 9.5 Tf
+1 0 0 1 50 198 Tm
+(- AI Essentials -- Google / Coursera \(2024\)) Tj
+/F2 9.5 Tf
+1 0 0 1 50 184 Tm
+(- Python for Everybody -- University of Michigan / Coursera \(2024\)) Tj
+/F2 9.5 Tf
+1 0 0 1 50 170 Tm
+(- CS50x: Introduction to Computer Science -- Harvard University \(2024\)) Tj
 ET
+
 endstream
 endobj
 5 0 obj
@@ -67,10 +179,10 @@ xref
 0000000058 00000 n 
 0000000115 00000 n 
 0000000251 00000 n 
-0000001408 00000 n 
-0000001483 00000 n 
+0000004821 00000 n 
+0000004896 00000 n 
 trailer
 << /Size 7 /Root 1 0 R >>
 startxref
-1553
+4966
 %%EOF

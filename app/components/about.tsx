@@ -43,10 +43,10 @@ export function About({
                 <p><span className="text-code-fn">&quot;location&quot;</span>: <span className="text-code-str">&quot;{site.location}&quot;</span>,</p>
                 <p><span className="text-code-fn">&quot;email&quot;</span>: <span className="text-code-str">&quot;{site.email}&quot;</span>,</p>
                 <p><span className="text-code-fn">&quot;focus&quot;</span>: [</p>
-                <p className="pl-8"><span className="text-code-str">&quot;AI / ML&quot;</span>,</p>
-                <p className="pl-8"><span className="text-code-str">&quot;LLMs &amp; Chatbots&quot;</span>,</p>
-                <p className="pl-8"><span className="text-code-str">&quot;Web Development&quot;</span>,</p>
-                <p className="pl-8"><span className="text-code-str">&quot;Prompt Engineering&quot;</span></p>
+                <p className="pl-8"><span className="text-code-str">&quot;Full-Stack Web Dev&quot;</span>,</p>
+                <p className="pl-8"><span className="text-code-str">&quot;Next.js &amp; React&quot;</span>,</p>
+                <p className="pl-8"><span className="text-code-str">&quot;E-Commerce &amp; APIs&quot;</span>,</p>
+                <p className="pl-8"><span className="text-code-str">&quot;Modern Web Tools&quot;</span></p>
                 <p>],</p>
                 <p><span className="text-code-fn">&quot;available&quot;</span>: <span className="text-code-str">true</span>,</p>
                 <p><span className="text-code-fn">&quot;status&quot;</span>: <span className="text-code-str">&quot;open to work&quot;</span></p>

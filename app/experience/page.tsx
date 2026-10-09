@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Experience } from "@/app/components/experience";
-import { Awards, CareerStats } from "@/app/components/experience-extra";
+import { Awards, CareerStats, Testimonials } from "@/app/components/experience-extra";
 
 export const metadata: Metadata = {
   title: "Experience",
@@ -23,6 +23,7 @@ export default function ExperiencePage() {
       <Experience />
       <CareerStats />
       <Awards />
+      <Testimonials />
     </>
   );
 }

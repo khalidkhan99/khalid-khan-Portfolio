@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Projects } from "@/app/components/projects";
-import { FeaturedProject, ProjectStats } from "@/app/components/projects-extra";
+import {
+  BuildPhilosophy,
+  FeaturedProject,
+  ProjectStats,
+} from "@/app/components/projects-extra";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -23,6 +27,7 @@ export default function ProjectsPage() {
       <Projects />
       <FeaturedProject />
       <ProjectStats />
+      <BuildPhilosophy />
     </>
   );
 }

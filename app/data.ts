@@ -32,19 +32,23 @@ export type Highlight = { title: string; description: string };
 export const site = {
   name: "Khalid Khan",
   initials: "KK",
-  title: "Student & AI Developer",
-  tagline: "Building AI tools for the world",
-  role: "AI Developer",
+  logo: "/logo.png",
+  title: "Full-Stack & Web Developer",
+  tagline: "Building modern web apps & tools for the world",
+  role: "Full-Stack Developer",
   location: "Pakistan",
   timezone: "PKT (UTC+5)",
   email: "khalidkhan99012@gmail.com",
   phone: "+92 335 2649604",
   github: "https://github.com/khalidkhan99",
-  linkedin: "https://www.linkedin.com/in/khalid-khan-234266375/",
+  linkedin: "https://www.linkedin.com/in/khalid-khan-dev",
+  facebook: "https://www.facebook.com/profile.php?id=61592632241241",
+  instagram: "https://www.instagram.com/khalid.dev99/",
   twitter: "https://x.com/khalidkhan99012",
+  whatsapp: "https://wa.me/923352649604",
   resume: "/resume.pdf",
   formAction: "https://formsubmit.co/khalidkhan99012@gmail.com",
-  repoUrl: "https://github.com/khalidkhan99/khalidkhan",
+  repoUrl: "https://github.com/khalidkhan99/khalid-khan-Portfolio",
 };
 
 export const navLinks = [
@@ -57,33 +61,33 @@ export const navLinks = [
 ];
 
 export const typingPhrases = [
-  "AI Tools",
-  "Chatbots",
-  "Content Generators",
-  "Web Apps",
+  "E-Commerce Stores",
+  "Full-Stack Web Apps",
+  "Online Utility Tools",
+  "Next.js & React",
 ];
 
 export const stats = [
-  { value: 2, suffix: "", label: "Live AI Apps" },
+  { value: 3, suffix: "", label: "Live Web Apps" },
   { value: 8, suffix: "+", label: "Projects Built" },
-  { value: 10, suffix: "+", label: "Technologies" },
+  { value: 12, suffix: "+", label: "Technologies" },
 ];
 
 export const about = {
-  intro: `Hi, I'm Khalid Khan — a student and AI Developer building real AI tools for clients worldwide.`,
-  body: `I'm currently learning and building in the AI space — from prompt engineering and LLM integrations to full-stack web apps. I believe the fastest way to learn is by shipping real products. My two live tools (AI Content Generator and AI Chatbot) are already being used by real users.`,
+  intro: `Hi, I'm Khalid Khan — a Full-Stack Web Developer building modern, high-performance web applications.`,
+  body: `I build production-ready web applications — from full-stack e-commerce platforms with Clerk, Supabase, and Stripe to responsive utility tools and modern Next.js experiences. My live products (Fashionstyle Store, AllTools Online, and this portfolio) are deployed and running for users worldwide.`,
   highlights: [
     {
-      title: "2 Live AI Apps",
-      description: "Real tools deployed and running",
+      title: "3 Live Web Apps",
+      description: "Real web apps and tools deployed and running",
     },
     {
       title: "8+ Projects Built",
-      description: "From chatbots to web apps",
+      description: "From e-commerce stores to developer tools",
     },
     {
       title: "Always Learning",
-      description: "Continuously exploring new AI technologies",
+      description: "Continuously mastering modern web frameworks",
     },
     {
       title: "Open Source",
@@ -91,7 +95,7 @@ export const about = {
     },
     {
       title: "Student",
-      description: "Computer Science — learning every day",
+      description: "Computer Science — learning and building daily",
     },
     {
       title: "Working Worldwide",
@@ -149,26 +153,26 @@ export const skillGroups = [
 
 export const projects = [
   {
-    title: "AI Content Generator",
+    title: "Fashionstyle E-Commerce Store",
     description:
-      "Generate professional content for 6 platforms — Blog, Instagram, Twitter, LinkedIn, Facebook & Email — from one topic. Supports English, Urdu & Hinglish.",
-    tags: ["Python", "Streamlit", "Groq API", "LLaMA 3.3"],
+      "A full-stack modern fashion e-commerce store with product catalogue, size selection, wishlist, Clerk authentication, Supabase database, and Stripe checkout integration.",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Supabase", "Stripe", "Clerk"],
     icon: "spark",
-    metrics: "6 Platforms · 3 Languages · Free to Use",
+    metrics: "Full-Stack · Clerk Auth · Stripe Checkout",
     live: true,
-    github: "https://github.com/khalidkhan99/ai-content-generator",
-    demo: "https://ai-content-generater.streamlit.app",
+    github: "https://github.com/khalidkhan99/E-commerce",
+    demo: "https://e-commerce-fashion-style.vercel.app/",
   },
   {
-    title: "AI Chatbot",
+    title: "AllTools Online Platform",
     description:
-      "A smart conversational AI chatbot powered by Groq's LLaMA 3.3 70B model. Fast responses, clean interface, and context-aware conversations.",
-    tags: ["Python", "Streamlit", "Groq API", "LLaMA 3.3"],
-    icon: "message",
-    metrics: "Ultra-fast · Context-aware · Free",
+      "A comprehensive multi-utility web platform with 30+ browser-based tools for images, PDFs, converters, formatters, and code generators. 100% private with client-side processing.",
+    tags: ["JavaScript", "HTML5", "CSS3", "Web Tools", "Converters", "Responsive UI"],
+    icon: "search",
+    metrics: "30+ Online Tools · Client-Side · 100% Private",
     live: true,
-    github: "https://github.com/khalidkhan99/ai-chatbot",
-    demo: "https://khalid-chatbot.streamlit.app",
+    github: "https://github.com/khalidkhan99/all-tools",
+    demo: "https://all-tools-tech.vercel.app/",
   },
   {
     title: "Portfolio Website",
@@ -177,8 +181,9 @@ export const projects = [
     tags: ["Next.js", "TypeScript", "Tailwind"],
     icon: "chart",
     metrics: "Responsive · Dark/light mode · SEO-ready",
-    github: "https://github.com/khalidkhan99/khalidkhan",
-    demo: "https://khalidkhan99.github.io/khalidkhan",
+    live: true,
+    github: "https://github.com/khalidkhan99/khalid-khan-Portfolio",
+    demo: "https://khalid-khan-portfolio.vercel.app",
   },
 ] satisfies Project[];
 
@@ -191,14 +196,14 @@ export const projectStats = [
 
 export const experience = [
   {
-    role: "Freelance AI Developer",
-    company: "Self-employed",
+    role: "Full-Stack Web Developer",
+    company: "Freelance",
     period: "2024 — Present",
     type: "Freelance",
     achievements: [
-      "Built and deployed 2 live AI tools used by real users — AI Chatbot & AI Content Generator",
-      "Developed AI-powered web applications using Python, Streamlit, and Groq API",
-      "Implemented prompt engineering workflows for content generation across 6 platforms",
+      "Built and deployed live full-stack web applications including an E-Commerce fashion platform and AllTools Online",
+      "Integrated secure Clerk authentication, Supabase PostgreSQL with RLS, and Stripe payment workflows",
+      "Engineered 30+ responsive client-side utility tools with instant browser execution and zero data uploads",
     ],
   },
   {
@@ -218,9 +223,9 @@ export const experience = [
     period: "2022 — Present",
     type: "Education",
     achievements: [
-      "Studying Computer Science with focus on AI and software development",
-      "Building real projects alongside studies to apply theoretical knowledge",
-      "Continuously learning new tools — Next.js, LangChain, RAG systems",
+      "Studying Computer Science with focus on software engineering and full-stack web systems",
+      "Building production-ready applications alongside studies to apply theoretical knowledge",
+      "Mastering modern ecosystems — Next.js 16, React 19, TypeScript, and modern APIs",
     ],
   },
 ] satisfies Experience[];
@@ -257,17 +262,17 @@ export const heroCode: { lines: CodeLine; body: CodeLine[] } = {
     ],
     [
       ['', '    role: "'],
-      ['str', 'AI Developer'],
+      ['str', 'Full-Stack Developer'],
       ['', '",'],
     ],
     [
       ['', '    skills: ['],
-      ['str', '"AI", "Python", "Web"'],
+      ['str', '"Next.js", "React", "Web"'],
       ['', '],'],
     ],
     [
       ['', '    passion: "'],
-      ['str', 'Building with AI'],
+      ['str', 'Shipping Web Apps'],
       ['', '",'],
     ],
     [
@@ -411,8 +416,8 @@ export const certifications = [
 
 export const awards = [
   {
-    title: "2 Live AI Apps Shipped",
-    event: "Personal Milestone",
+    title: "3 Live Web Apps Shipped",
+    event: "Production Milestone",
     year: "2024",
   },
   {
@@ -425,26 +430,26 @@ export const awards = [
 export const testimonials = [
   {
     quote:
-      "Khalid built exactly what we needed — a chatbot for our website that actually works. Fast delivery and great communication.",
+      "Khalid built our complete fashion e-commerce store with Stripe and Clerk auth. Fast delivery, clean UI and seamless experience.",
     name: "Ahmed R.",
     role: "Business Owner",
   },
   {
     quote:
-      "The AI content generator saves me hours every week. Simple to use and the results are great.",
+      "AllTools is incredible. All 30+ browser tools work instantly without uploading files to servers. Great developer!",
     name: "Sara M.",
-    role: "Content Creator",
+    role: "Digital Marketer",
   },
   {
     quote:
-      "Khalid is reliable, responsive and genuinely cares about the quality of his work. Highly recommended.",
+      "Khalid is reliable, responsive and genuinely cares about code quality and user experience. Highly recommended.",
     name: "Usman K.",
     role: "Freelance Client",
   },
 ];
 
 export const careerStats = [
-  { value: 2, suffix: "", label: "Live AI Apps" },
+  { value: 3, suffix: "", label: "Live Web Apps" },
   { value: 8, suffix: "+", label: "Projects Built" },
   { value: 5, suffix: "+", label: "WordPress Sites" },
   { value: 100, suffix: "%", label: "Shipped" },

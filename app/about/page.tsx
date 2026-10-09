@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { AboutProcess, AboutServices } from "@/app/components/about-extra";
+import { AboutInterests, AboutProcess, AboutServices } from "@/app/components/about-extra";
 import { About } from "@/app/components/about";
 
 export const metadata: Metadata = {
@@ -23,6 +23,7 @@ export default function AboutPage() {
       <About />
       <AboutServices />
       <AboutProcess />
+      <AboutInterests />
     </>
   );
 }

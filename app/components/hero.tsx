@@ -1,12 +1,16 @@
 import {
   ArrowRightIcon,
   DownloadIcon,
+  FacebookIcon,
   GithubIcon,
+  InstagramIcon,
   LinkedinIcon,
   MailIcon,
   MapPinIcon,
+  WhatsappIcon,
   XIcon,
 } from "@/app/components/icons";
+import Link from "next/link";
 import { Particles } from "@/app/components/particles";
 import { StatCounter } from "@/app/components/stat-counter";
 import { Typewriter } from "@/app/components/typewriter";
@@ -82,13 +86,13 @@ export function Hero() {
           </div>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <a
+            <Link
               href="/projects"
               className="group inline-flex items-center gap-2 rounded-lg bg-gradient-primary px-6 py-3 text-sm font-semibold text-white shadow-lg transition-transform hover:-translate-y-0.5"
             >
               View My Work
               <ArrowRightIcon className="size-4 transition-transform group-hover:translate-x-1" />
-            </a>
+            </Link>
             <a
               href={site.resume}
               download
@@ -114,6 +118,9 @@ export function Hero() {
             {[
               { href: site.github, label: "GitHub", Icon: GithubIcon },
               { href: site.linkedin, label: "LinkedIn", Icon: LinkedinIcon },
+              { href: site.whatsapp, label: "WhatsApp", Icon: WhatsappIcon },
+              { href: site.facebook, label: "Facebook", Icon: FacebookIcon },
+              { href: site.instagram, label: "Instagram", Icon: InstagramIcon },
               { href: site.twitter, label: "X (Twitter)", Icon: XIcon },
               { href: `mailto:${site.email}`, label: "Email", Icon: MailIcon },
             ].map(({ href, label, Icon }) => (
