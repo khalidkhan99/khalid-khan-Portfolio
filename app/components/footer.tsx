@@ -18,17 +18,17 @@ export function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-5 py-10 sm:flex-row sm:px-8">
         <div className="flex items-center gap-2.5">
           {site.logo ? (
-            <span className="relative flex size-7 items-center justify-center overflow-hidden rounded-md border border-border/80 bg-background p-0.5 shadow-sm">
+            <span className="relative flex size-7 items-center justify-center overflow-hidden rounded-full border border-accent/40 bg-surface p-0.5 shadow-sm">
               <Image
                 src={site.logo}
                 alt={site.name}
                 width={28}
                 height={28}
-                className="size-full rounded-[4px] object-cover"
+                className="size-full rounded-full object-cover object-top"
               />
             </span>
           ) : (
-            <span className="bg-gradient-primary flex size-7 items-center justify-center rounded-md text-xs font-bold text-white">
+            <span className="bg-gradient-primary flex size-7 items-center justify-center rounded-full text-xs font-bold text-white">
               {site.initials}
             </span>
           )}

@@ -42,18 +42,18 @@ export function Navbar() {
           aria-label="Go to home"
         >
           {site.logo ? (
-            <span className="relative flex size-9 items-center justify-center overflow-hidden rounded-lg border border-border/80 bg-background p-0.5 shadow-md transition-all group-hover:scale-105 group-hover:border-accent/60 group-hover:shadow-[0_0_15px_-3px_rgba(0,242,254,0.35)]">
+            <span className="relative flex size-9 items-center justify-center overflow-hidden rounded-full border-2 border-accent/40 bg-surface p-0.5 shadow-md transition-all group-hover:scale-105 group-hover:border-accent group-hover:shadow-[0_0_16px_rgba(0,242,254,0.4)]">
               <Image
                 src={site.logo}
                 alt={site.name}
                 width={36}
                 height={36}
-                className="size-full rounded-[6px] object-cover"
+                className="size-full rounded-full object-cover object-top"
                 priority
               />
             </span>
           ) : (
-            <span className="bg-gradient-primary flex size-8 items-center justify-center rounded-md text-sm text-white shadow-lg">
+            <span className="bg-gradient-primary flex size-8 items-center justify-center rounded-full text-sm text-white shadow-lg">
               {site.initials}
             </span>
           )}

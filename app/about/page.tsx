@@ -5,14 +5,14 @@ import { About } from "@/app/components/about";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn about Khalid Khan — Student & AI Developer from Pakistan. Building AI chatbots, LLM tools, and web applications with Python, Next.js, and more.",
-  keywords: ["Khalid Khan About", "Khalid Khan AI Developer", "Khalid Khan Pakistan", "AI Student Pakistan"],
+    "Learn about Khalid Khan — Full-Stack & Web Developer from Pakistan. Building modern e-commerce stores, web applications, and developer tools with Next.js, React, and TypeScript.",
+  keywords: ["Khalid Khan About", "Khalid Khan Full-Stack Developer", "Khalid Khan Web Developer", "Khalid Khan Pakistan"],
   alternates: {
     canonical: "https://khalid-khan-portfolio.vercel.app/about",
   },
   openGraph: {
-    title: "About Khalid Khan | AI Developer",
-    description: "Learn about Khalid Khan — Student & AI Developer from Pakistan.",
+    title: "About Khalid Khan | Full-Stack & Web Developer",
+    description: "Learn about Khalid Khan — Full-Stack & Web Developer from Pakistan.",
     url: "https://khalid-khan-portfolio.vercel.app/about",
   },
 };

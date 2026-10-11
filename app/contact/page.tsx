@@ -9,14 +9,14 @@ import {
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with Khalid Khan — AI Developer from Pakistan. Available for freelance AI and web development projects.",
-  keywords: ["Contact Khalid Khan", "Hire AI Developer Pakistan", "Khalid Khan Freelance"],
+    "Get in touch with Khalid Khan — Full-Stack & Web Developer from Pakistan. Available for freelance web applications, e-commerce stores, and software projects.",
+  keywords: ["Contact Khalid Khan", "Hire Web Developer Pakistan", "Khalid Khan Freelance", "Full-Stack Developer"],
   alternates: {
     canonical: "https://khalid-khan-portfolio.vercel.app/contact",
   },
   openGraph: {
-    title: "Contact | Khalid Khan AI Developer",
-    description: "Hire Khalid Khan for AI and web development projects.",
+    title: "Contact | Khalid Khan Full-Stack Developer",
+    description: "Hire Khalid Khan for modern web applications and full-stack development projects.",
     url: "https://khalid-khan-portfolio.vercel.app/contact",
   },
 };

@@ -9,14 +9,14 @@ import {
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Khalid Khan's projects — AI chatbots, content generators, and web apps built with Python, LLaMA, LangChain, Next.js, and Streamlit.",
-  keywords: ["Khalid Khan Projects", "AI Chatbot Project", "AI Content Generator", "Python LLM Project"],
+    "Khalid Khan's projects — full-stack e-commerce stores, 30+ utility tools web suites, and modern responsive web applications built with Next.js, React, and TypeScript.",
+  keywords: ["Khalid Khan Projects", "Fashionstyle E-Commerce", "AllTools Online", "Next.js Projects", "Full-Stack Portfolio"],
   alternates: {
     canonical: "https://khalid-khan-portfolio.vercel.app/projects",
   },
   openGraph: {
-    title: "Projects | Khalid Khan AI Developer",
-    description: "AI chatbots, content generators, and web apps by Khalid Khan.",
+    title: "Projects | Khalid Khan Full-Stack & Web Developer",
+    description: "Full-stack e-commerce stores, utility web tools, and web applications by Khalid Khan.",
     url: "https://khalid-khan-portfolio.vercel.app/projects",
   },
 };

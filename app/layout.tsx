@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import { FloatingResume } from "@/app/components/floating-resume";
 import { Footer } from "@/app/components/footer";
 import { Navbar } from "@/app/components/navbar";
+import { Preloader } from "@/app/components/preloader";
 import { ThemeProvider } from "@/app/components/theme-provider";
 import "@/app/globals.css";
 
@@ -79,18 +80,21 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon-48x48.png?v=4", sizes: "48x48", type: "image/png" },
-      { url: "/favicon-32x32.png?v=4", sizes: "32x32", type: "image/png" },
-      { url: "/favicon-16x16.png?v=4", sizes: "16x16", type: "image/png" },
-      { url: "/android-chrome-192x192.png?v=4", sizes: "192x192", type: "image/png" },
-      { url: "/favicon.ico?v=4", sizes: "any" },
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-48x48.png", sizes: "48x48", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
     ],
     apple: [
-      { url: "/apple-touch-icon.png?v=4", sizes: "180x180", type: "image/png" },
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
     ],
-    shortcut: "/favicon-32x32.png?v=4",
+    shortcut: "/favicon.ico",
   },
-  manifest: "/site.webmanifest?v=4",
+  manifest: "/site.webmanifest",
+  verification: {
+    google: "googlec37b0c50b28909ad.html",
+  },
   category: "technology",
 };
 
@@ -133,7 +137,7 @@ const jsonLd = {
       "@id": `${BASE_URL}/#website`,
       url: BASE_URL,
       name: "Khalid Khan Portfolio",
-      description: "Portfolio of Khalid Khan — AI Developer & Student from Pakistan",
+      description: "Portfolio of Khalid Khan — Full-Stack & Web Developer from Pakistan",
       author: { "@id": `${BASE_URL}/#person` },
       inLanguage: "en-US",
     },
@@ -148,13 +152,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png?v=4" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=4" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=4" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=4" />
-        <link rel="shortcut icon" type="image/png" href="/favicon-48x48.png?v=4" />
-        <link rel="icon" href="/favicon.ico?v=4" sizes="any" />
-        <link rel="manifest" href="/site.webmanifest?v=4" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -167,6 +164,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Preloader />
           <Navbar />
           {children}
           <FloatingResume />

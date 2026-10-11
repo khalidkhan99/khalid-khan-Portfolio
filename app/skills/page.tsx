@@ -9,14 +9,14 @@ import {
 export const metadata: Metadata = {
   title: "Skills",
   description:
-    "Khalid Khan's technical skills — Python, Next.js, React, TypeScript, LangChain, LLaMA, Streamlit, WordPress, and more.",
-  keywords: ["Khalid Khan Skills", "Python Developer", "Next.js Developer", "LangChain", "LLM Skills"],
+    "Khalid Khan's technical skills — Next.js, React, TypeScript, Tailwind CSS, Python, Supabase, Stripe, WordPress, and modern web development.",
+  keywords: ["Khalid Khan Skills", "Full-Stack Developer", "Next.js Developer", "React Developer", "TypeScript", "Tailwind CSS"],
   alternates: {
     canonical: "https://khalid-khan-portfolio.vercel.app/skills",
   },
   openGraph: {
-    title: "Skills | Khalid Khan AI Developer",
-    description: "Python, Next.js, LangChain, LLaMA and more — Khalid Khan's full skill set.",
+    title: "Skills | Khalid Khan Full-Stack & Web Developer",
+    description: "Next.js, React, TypeScript, Tailwind CSS, Python and more — Khalid Khan's full skill set.",
     url: "https://khalid-khan-portfolio.vercel.app/skills",
   },
 };
