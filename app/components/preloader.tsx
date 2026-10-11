@@ -10,55 +10,41 @@ export function Preloader() {
   const [isDone, setIsDone] = useState(false);
 
   useEffect(() => {
-    // Check if user prefers reduced motion
-    const prefersReducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)",
-    ).matches;
-
-    if (prefersReducedMotion) {
-      const raf = requestAnimationFrame(() => setIsDone(true));
-      return () => cancelAnimationFrame(raf);
-    }
-
-    // Lock page scroll during preloader
-    const originalOverflow = document.body.style.overflow;
+    // Lock scroll during preloader
+    const prevOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
 
+    const duration = 1250; // 1.25s total load duration
     const startTime = performance.now();
-    const duration = 1400; // 1.4s smooth loader
-    let animationFrameId: number;
+    let rafId: number;
 
-    const animate = (currentTime: number) => {
-      const elapsed = currentTime - startTime;
-      const linearFraction = Math.min(elapsed / duration, 1);
+    const tick = (now: number) => {
+      const elapsed = now - startTime;
+      const t = Math.min(elapsed / duration, 1);
 
-      // Ease out cubic progress curve for natural, snappy feel
-      const easedProgress = Math.min(
-        100,
-        Math.round(100 * (1 - Math.pow(1 - linearFraction, 3))),
-      );
+      // Smooth cubic-out easing curve
+      const eased = 1 - Math.pow(1 - t, 3);
+      setProgress(Math.round(eased * 100));
 
-      setProgress(easedProgress);
-
-      if (linearFraction < 1) {
-        animationFrameId = requestAnimationFrame(animate);
+      if (t < 1) {
+        rafId = requestAnimationFrame(tick);
       } else {
-        // Finished loading — initiate exit transition
+        // Completed loading — smooth exit sequence
         setTimeout(() => {
           setIsExiting(true);
           setTimeout(() => {
             setIsDone(true);
-            document.body.style.overflow = originalOverflow;
-          }, 500);
-        }, 150);
+            document.body.style.overflow = prevOverflow;
+          }, 450);
+        }, 120);
       }
     };
 
-    animationFrameId = requestAnimationFrame(animate);
+    rafId = requestAnimationFrame(tick);
 
     return () => {
-      cancelAnimationFrame(animationFrameId);
-      document.body.style.overflow = originalOverflow;
+      cancelAnimationFrame(rafId);
+      document.body.style.overflow = prevOverflow;
     };
   }, []);
 
@@ -67,27 +53,38 @@ export function Preloader() {
   return (
     <div
       aria-hidden="true"
-      className={`fixed inset-0 z-[100] flex flex-col items-center justify-center bg-[#090a0f] px-6 select-none transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+      className={`fixed inset-0 z-[9999] flex h-dvh w-screen flex-col items-center justify-center bg-[#090a0f] px-6 select-none overscroll-none touch-none transition-all duration-500 ease-out ${
         isExiting
-          ? "pointer-events-none scale-105 opacity-0 blur-[2px]"
+          ? "pointer-events-none scale-[1.02] opacity-0"
           : "opacity-100 scale-100"
       }`}
     >
-      {/* Background ambient glow effects */}
-      <div className="bg-grid absolute inset-0 opacity-40" />
-      <div className="pointer-events-none absolute size-96 rounded-full bg-gradient-cyan opacity-20 blur-[130px]" />
-      <div className="pointer-events-none absolute size-80 rounded-full bg-gradient-purple opacity-20 blur-[130px] translate-y-12" />
+      {/* Lightweight GPU-friendly ambient radial background (No CPU-heavy Gaussian blurs) */}
+      <div className="bg-grid pointer-events-none absolute inset-0 opacity-25" />
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(circle at 50% 42%, rgba(0, 242, 254, 0.12) 0%, transparent 65%)",
+        }}
+      />
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(circle at 50% 58%, rgba(127, 0, 255, 0.10) 0%, transparent 65%)",
+        }}
+      />
 
       <div className="relative flex flex-col items-center">
         {/* Animated Avatar / Logo */}
-        <div className="relative mb-6">
-          <div className="absolute -inset-3 animate-pulse rounded-full bg-gradient-primary opacity-40 blur-xl" />
-          <div className="relative size-28 overflow-hidden rounded-full border-2 border-accent/60 bg-[#0f1320] p-1 shadow-[0_0_35px_rgba(0,242,254,0.35)] transition-transform sm:size-32">
+        <div className="relative mb-5">
+          <div className="relative size-24 overflow-hidden rounded-full border-2 border-accent/60 bg-[#0f1320] p-1 shadow-[0_0_24px_rgba(0,242,254,0.35)] sm:size-28">
             <Image
               src={site.logo}
               alt={site.name}
-              width={128}
-              height={128}
+              width={112}
+              height={112}
               priority
               className="size-full rounded-full object-cover object-top"
             />
@@ -98,33 +95,35 @@ export function Preloader() {
         <h2 className="font-mono text-2xl font-bold tracking-tight text-white sm:text-3xl">
           Khalid<span className="gradient-cyan"> Khan</span>
         </h2>
-        <p className="mt-1 font-mono text-xs tracking-widest text-[#94a3b8] uppercase sm:text-sm">
+        <p className="mt-1 font-mono text-xs tracking-widest text-[#94a3b8] uppercase">
           Full-Stack &amp; Web Developer
         </p>
 
-        {/* Smooth Animated Loading Line */}
-        <div className="mt-8 w-60 sm:w-72">
+        {/* Smooth GPU-Accelerated Loading Line */}
+        <div className="mt-7 w-56 sm:w-64">
           {/* Progress Track */}
-          <div className="relative h-2 w-full overflow-hidden rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
+          <div className="relative h-1.5 w-full overflow-hidden rounded-full border border-white/10 bg-white/10">
+            {/* GPU-Accelerated scaleX fill bar */}
             <div
-              className="relative h-full rounded-full bg-gradient-to-r from-[#00f2fe] via-[#38bdf8] to-[#7f00ff] shadow-[0_0_14px_rgba(0,242,254,0.85)] transition-[width] duration-75 ease-out"
-              style={{ width: `${progress}%` }}
-            >
-              {/* Glowing tip light */}
-              <span className="absolute top-1/2 right-0 size-2 -translate-y-1/2 translate-x-1 rounded-full bg-white shadow-[0_0_8px_#00f2fe]" />
-            </div>
+              className="h-full w-full rounded-full bg-gradient-to-r from-[#00f2fe] via-[#38bdf8] to-[#7f00ff] shadow-[0_0_10px_#00f2fe]"
+              style={{
+                transform: `scaleX(${progress / 100})`,
+                transformOrigin: "left",
+                willChange: "transform",
+                transition: "transform 100ms cubic-bezier(0.2, 0.8, 0.2, 1)",
+              }}
+            />
           </div>
 
-          {/* Loading status & percentage counter */}
-          <div className="mt-3 flex items-center justify-between font-mono text-xs text-[#64748b]">
-            <span className="flex items-center gap-2">
-              <span className="relative flex size-2">
-                <span className="absolute inline-flex size-full animate-ping rounded-full bg-accent opacity-75" />
-                <span className="relative inline-flex size-2 rounded-full bg-accent" />
-              </span>
-              <span className="text-dim">Loading experience...</span>
+          {/* Status & percentage */}
+          <div className="mt-2.5 flex items-center justify-between font-mono text-xs text-[#64748b]">
+            <span className="flex items-center gap-1.5">
+              <span className="size-1.5 rounded-full bg-accent" />
+              <span className="text-[11px] text-dim">Loading...</span>
             </span>
-            <span className="font-semibold text-bright">{progress}%</span>
+            <span className="font-mono text-[11px] font-semibold text-bright">
+              {progress}%
+            </span>
           </div>
         </div>
       </div>

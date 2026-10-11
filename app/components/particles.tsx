@@ -45,8 +45,11 @@ export function Particles() {
       initParticles();
     };
 
+    const isMobile = () => width < 640;
+
     const initParticles = () => {
-      particles = Array.from({ length: COUNT }, () => ({
+      const count = isMobile() ? 25 : COUNT;
+      particles = Array.from({ length: count }, () => ({
         x: Math.random() * width,
         y: Math.random() * height,
         vx: (Math.random() - 0.5) * 0.55,
@@ -55,6 +58,7 @@ export function Particles() {
     };
 
     const drawLines = () => {
+      const linkDist = isMobile() ? 80 : LINK_DIST;
       for (let i = 0; i < particles.length; i++) {
         for (let j = i + 1; j < particles.length; j++) {
           const a = particles[i];
@@ -62,7 +66,7 @@ export function Particles() {
           const dx = a.x - b.x;
           const dy = a.y - b.y;
           const dist = Math.hypot(dx, dy);
-          if (dist < LINK_DIST) {
+          if (dist < linkDist) {
             const opacity = (1 - dist / LINK_DIST) * 0.28;
             ctx.strokeStyle = `rgba(0, 242, 254, ${opacity.toFixed(3)})`;
             ctx.lineWidth = 1;
