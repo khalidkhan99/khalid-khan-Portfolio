@@ -183,7 +183,7 @@ export const projects = [
     metrics: "Responsive · Dark/light mode · SEO-ready",
     live: true,
     github: "https://github.com/khalidkhan99/khalid-khan-Portfolio",
-    demo: "https://khalid-khan-portfolio.vercel.app",
+    demo: "https://khalid-khan-dev.vercel.app",
   },
 ] satisfies Project[];
 

@@ -4,7 +4,7 @@
 > **Last Updated:** October 2026  
 > **Status:** Production-Ready / Active  
 > **Project Name:** `main-khalid-khan-portfolio-vercel` (`nextjs-portfolio`)  
-> **Live Production URL:** [https://khalid-khan-portfolio.vercel.app](https://khalid-khan-portfolio.vercel.app)  
+> **Live Production URL:** [https://khalid-khan-dev.vercel.app](https://khalid-khan-dev.vercel.app)  
 > **Repository:** [https://github.com/khalidkhan99/khalid-khan-Portfolio](https://github.com/khalidkhan99/khalid-khan-Portfolio)  
 
 ---
@@ -127,7 +127,7 @@ All content, external links, social handles, and metadata are maintained cleanly
 | :--- | :--- | :--- | :--- | :--- |
 | **Fashionstyle E-Commerce Store** | [e-commerce-fashion-style.vercel.app](https://e-commerce-fashion-style.vercel.app/) | [GitHub Repo](https://github.com/khalidkhan99/E-commerce) | Next.js 16, React 19, Clerk Auth, Supabase (PostgreSQL with RLS), Stripe Checkout, Cloudinary, Tailwind CSS | Full-stack modern fashion store with product catalog, search & filters, size selection, wishlist, cart, and Stripe test checkout. |
 | **AllTools Online Platform** | [all-tools-tech.vercel.app](https://all-tools-tech.vercel.app/) | [GitHub Repo](https://github.com/khalidkhan99/all-tools) | JavaScript, HTML5, CSS3, Modern Web APIs, Responsive UI | Comprehensive utility web suite featuring 30+ browser tools for images, PDFs, converters, and code generators. 100% private client-side processing. |
-| **Portfolio Website** | [khalid-khan-portfolio.vercel.app](https://khalid-khan-portfolio.vercel.app) | [GitHub Repo](https://github.com/khalidkhan99/khalid-khan-Portfolio) | Next.js 16, TypeScript, Tailwind CSS v4, Turbopack | Personal developer portfolio with responsive design, particle canvas, dark/light mode, and JSON-LD SEO markup. |
+| **Portfolio Website** | [khalid-khan-dev.vercel.app](https://khalid-khan-dev.vercel.app) | [GitHub Repo](https://github.com/khalidkhan99/khalid-khan-Portfolio) | Next.js 16, TypeScript, Tailwind CSS v4, Turbopack | Personal developer portfolio with responsive design, particle canvas, dark/light mode, and JSON-LD SEO markup. |
 
 ---
 
@@ -204,7 +204,7 @@ All content, external links, social handles, and metadata are maintained cleanly
 ## 7. SEO, Metadata & Schema
 
 Configured in [`app/layout.tsx`](file:///C:/Users/user/Desktop/MY%20PORTFOLIO%20PROJECTS/portfolio/main-khalid-khan-portfolio-vercel/app/layout.tsx):
-- **Canonical URL:** `https://khalid-khan-portfolio.vercel.app`
+- **Canonical URL:** `https://khalid-khan-dev.vercel.app`
 - **Twitter Card:** `summary_large_image` with `@khalidkhan99012` creator handle.
 - **Google Search Console Verification:** Via `public/googlec37b0c50b28909ad.html`.
 - **JSON-LD Schema Graph:**

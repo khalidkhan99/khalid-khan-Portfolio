@@ -12,12 +12,12 @@ export const metadata: Metadata = {
     "Khalid Khan's projects — full-stack e-commerce stores, 30+ utility tools web suites, and modern responsive web applications built with Next.js, React, and TypeScript.",
   keywords: ["Khalid Khan Projects", "Fashionstyle E-Commerce", "AllTools Online", "Next.js Projects", "Full-Stack Portfolio"],
   alternates: {
-    canonical: "https://khalid-khan-portfolio.vercel.app/projects",
+    canonical: "https://khalid-khan-dev.vercel.app/projects",
   },
   openGraph: {
     title: "Projects | Khalid Khan Full-Stack & Web Developer",
     description: "Full-stack e-commerce stores, utility web tools, and web applications by Khalid Khan.",
-    url: "https://khalid-khan-portfolio.vercel.app/projects",
+    url: "https://khalid-khan-dev.vercel.app/projects",
   },
 };
 

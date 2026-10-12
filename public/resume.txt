@@ -7,7 +7,7 @@ GitHub: https://github.com/khalidkhan99
 LinkedIn: https://www.linkedin.com/in/khalid-khan-dev
 Facebook: https://www.facebook.com/profile.php?id=61592632241241
 Instagram: https://www.instagram.com/khalid.dev99/
-Portfolio: https://khalid-khan-portfolio.vercel.app
+Portfolio: https://khalid-khan-dev.vercel.app
 
 ==================================================
 SUMMARY
@@ -43,7 +43,7 @@ LIVE PROJECTS
 3. Developer Portfolio
    - Personal portfolio built with Next.js 16, TypeScript, and Tailwind CSS v4.
    - Fully responsive, dark/light theme, interactive particle canvas, and SEO-optimized with JSON-LD schema.
-   - Live Demo: https://khalid-khan-portfolio.vercel.app
+   - Live Demo: https://khalid-khan-dev.vercel.app
    - GitHub: https://github.com/khalidkhan99/khalid-khan-Portfolio
 
 ==================================================
