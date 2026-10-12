@@ -136,8 +136,14 @@ const jsonLd = {
       "@type": "WebSite",
       "@id": `${BASE_URL}/#website`,
       url: BASE_URL,
-      name: "Khalid Khan Portfolio",
+      name: "Khalid Khan",
+      alternateName: [
+        "Khalid Khan Portfolio",
+        "Khalid Khan Dev",
+        "khalid-khan-portfolio"
+      ],
       description: "Portfolio of Khalid Khan — Full-Stack & Web Developer from Pakistan",
+      publisher: { "@id": `${BASE_URL}/#person` },
       author: { "@id": `${BASE_URL}/#person` },
       inLanguage: "en-US",
     },
