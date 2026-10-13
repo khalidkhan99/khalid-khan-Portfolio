@@ -89,6 +89,7 @@ main-khalid-khan-portfolio-vercel/
 │   └── developer-portfolio/
 │       └── MASTER.md                 # Design rules, color palettes, and component guidelines
 ├── public/
+│   ├── BingSiteAuth.xml              # Bing Webmaster Tools verification file
 │   ├── googlec37b0c50b28909ad.html   # Google Search Console domain verification file
 │   ├── resume.pdf                    # Clean 1-page generated PDF resume
 │   └── resume.txt                    # Plaintext version of Khalid Khan's professional CV
@@ -207,6 +208,7 @@ Configured in [`app/layout.tsx`](file:///C:/Users/user/Desktop/MY%20PORTFOLIO%20
 - **Canonical URL:** `https://khalid-khan-dev.vercel.app`
 - **Twitter Card:** `summary_large_image` with `@khalidkhan99012` creator handle.
 - **Google Search Console Verification:** Via `public/googlec37b0c50b28909ad.html`.
+- **Bing Webmaster Tools Verification:** Via `public/BingSiteAuth.xml` and `<meta name="msvalidate.01">`.
 - **JSON-LD Schema Graph:**
   - `@type: "Person"` with name, nationality, URL, job title, and verified `sameAs` array matching GitHub, LinkedIn, Facebook, Instagram, and X/Twitter.
   - `@type: "WebSite"` with title, author reference, and English language definition.

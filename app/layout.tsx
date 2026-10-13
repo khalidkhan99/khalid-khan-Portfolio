@@ -94,6 +94,9 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
   verification: {
     google: "googlec37b0c50b28909ad.html",
+    other: {
+      "msvalidate.01": "CF45B7DB78C5B5FAE8B8A5631B048C0F",
+    },
   },
   category: "technology",
 };
