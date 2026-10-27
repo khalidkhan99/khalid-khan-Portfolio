@@ -6,9 +6,11 @@ import { experience } from "@/app/data";
 export function Experience({
   showHeading = true,
   pageHref,
+  asH1 = false,
 }: {
   showHeading?: boolean;
   pageHref?: string;
+  asH1?: boolean;
 }) {
   return (
     <section
@@ -24,6 +26,7 @@ export function Experience({
             description="Building software and AI tools — from freelance projects to open-source work."
             actionHref={pageHref}
             actionLabel="View experience"
+            as={asH1 ? "h1" : "h2"}
           />
         ) : null}
 

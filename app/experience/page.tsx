@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export default function ExperiencePage() {
   return (
     <>
-      <Experience />
+      <Experience asH1 />
       <CareerStats />
       <Awards />
       <Testimonials />

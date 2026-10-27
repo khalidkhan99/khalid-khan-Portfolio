@@ -20,9 +20,11 @@ import { site } from "@/app/data";
 export function Contact({
   showHeading = true,
   pageHref,
+  asH1 = false,
 }: {
   showHeading?: boolean;
   pageHref?: string;
+  asH1?: boolean;
 }) {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
 
@@ -63,6 +65,7 @@ export function Contact({
             description="Have a project in mind or just want to say hi? My inbox is always open."
             actionHref={pageHref}
             actionLabel="Get in touch"
+            as={asH1 ? "h1" : "h2"}
           />
         ) : null}
 

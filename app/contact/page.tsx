@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <Contact />
+      <Contact asH1 />
       <ContactValues />
       <ContactFaq />
       <Availability />

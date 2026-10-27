@@ -8,6 +8,7 @@ type SectionHeadingProps = {
   description?: string;
   actionHref?: string;
   actionLabel?: string;
+  as?: "h1" | "h2";
 };
 
 export function SectionHeading({
@@ -17,6 +18,7 @@ export function SectionHeading({
   description,
   actionHref,
   actionLabel = "Open full page",
+  as: Component = "h2",
 }: SectionHeadingProps) {
   return (
     <div className="mx-auto mb-10 max-w-2xl text-center sm:mb-14">
@@ -24,12 +26,12 @@ export function SectionHeading({
         <span className="size-1.5 rounded-full bg-gradient-cyan" />
         {eyebrow}
       </span>
-      <h2 className="mt-4 text-3xl font-bold text-heading sm:text-4xl">
+      <Component className="mt-4 text-3xl font-bold text-heading sm:text-4xl">
         {title}{" "}
         {titleAccent ? (
           <span className="gradient-purple">{titleAccent}</span>
         ) : null}
-      </h2>
+      </Component>
       {description ? (
         <p className="mt-4 text-body">{description}</p>
       ) : null}

@@ -5,9 +5,11 @@ import { about, site } from "@/app/data";
 export function About({
   showHeading = true,
   pageHref,
+  asH1 = false,
 }: {
   showHeading?: boolean;
   pageHref?: string;
+  asH1?: boolean;
 }) {
   return (
     <section id="about" className="relative scroll-mt-16 py-24">
@@ -20,6 +22,7 @@ export function About({
             description={about.intro}
             actionHref={pageHref}
             actionLabel="Read my story"
+            as={asH1 ? "h1" : "h2"}
           />
         ) : null}
 

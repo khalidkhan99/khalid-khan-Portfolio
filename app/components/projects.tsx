@@ -24,9 +24,11 @@ const icons: Record<ProjectIcon, (props: { className?: string }) => React.ReactN
 export function Projects({
   showHeading = true,
   pageHref,
+  asH1 = false,
 }: {
   showHeading?: boolean;
   pageHref?: string;
+  asH1?: boolean;
 }) {
   return (
     <section id="projects" className="relative scroll-mt-16 py-24">
@@ -39,6 +41,7 @@ export function Projects({
             description="A selection of AI and software projects built with modern tools and shipped for real use."
             actionHref={pageHref}
             actionLabel="See all projects"
+            as={asH1 ? "h1" : "h2"}
           />
         ) : null}
 

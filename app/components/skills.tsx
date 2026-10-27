@@ -40,9 +40,11 @@ function proficiencyOf(level: number) {
 export function Skills({
   showHeading = true,
   pageHref,
+  asH1 = false,
 }: {
   showHeading?: boolean;
   pageHref?: string;
+  asH1?: boolean;
 }) {
   return (
     <section id="skills" className="relative scroll-mt-16 bg-surface/40 py-24">
@@ -55,6 +57,7 @@ export function Skills({
             description="A stack built for solving real problems — from model training to production deployment."
             actionHref={pageHref}
             actionLabel="Browse skills"
+            as={asH1 ? "h1" : "h2"}
           />
         ) : null}
 

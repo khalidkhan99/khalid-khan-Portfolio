@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <About />
+      <About asH1 />
       <AboutServices />
       <AboutProcess />
       <AboutInterests />

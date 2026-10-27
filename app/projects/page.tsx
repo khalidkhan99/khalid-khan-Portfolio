@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   return (
     <>
-      <Projects />
+      <Projects asH1 />
       <FeaturedProject />
       <ProjectStats />
       <BuildPhilosophy />

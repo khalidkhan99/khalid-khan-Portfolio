@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 export default function SkillsPage() {
   return (
     <>
-      <Skills />
+      <Skills asH1 />
       <SkillsTools />
       <SkillsLearning />
       <SkillsCertifications />
