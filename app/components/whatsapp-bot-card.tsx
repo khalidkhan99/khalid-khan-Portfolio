@@ -37,10 +37,15 @@ export function WhatsAppBotCard() {
     },
   ]);
 
-  const messagesEndRef = useRef<HTMLDivElement>(null);
+  const chatContainerRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (chatContainerRef.current) {
+      chatContainerRef.current.scrollTo({
+        top: chatContainerRef.current.scrollHeight,
+        behavior: "smooth",
+      });
+    }
   };
 
   useEffect(() => {
@@ -359,8 +364,11 @@ export function WhatsAppBotCard() {
 
         {/* Chat Body */}
         <div className="space-y-4 p-4 sm:p-5">
-          {/* Messages Container */}
-          <div className="h-[280px] space-y-3 overflow-y-auto pr-1">
+          {/* Messages Container (Internal scrolling only, overscroll-contain prevents webpage jump) */}
+          <div
+            ref={chatContainerRef}
+            className="h-[280px] space-y-3 overflow-y-auto pr-1 overscroll-contain"
+          >
             {messages.map((msg) => (
               <div
                 key={msg.id}
@@ -441,8 +449,6 @@ export function WhatsAppBotCard() {
                 <span className="ml-1.5 text-xs text-dim">Khalid&apos;s AI is thinking...</span>
               </div>
             )}
-
-            <div ref={messagesEndRef} />
           </div>
 
           {/* Input & Send Bar */}
