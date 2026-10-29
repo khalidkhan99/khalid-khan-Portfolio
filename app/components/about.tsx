@@ -1,6 +1,7 @@
 import { SectionHeading } from "@/app/components/section-heading";
 import { Reveal } from "@/app/components/reveal";
-import { about, site } from "@/app/data";
+import { WhatsAppBotCard } from "@/app/components/whatsapp-bot-card";
+import { about } from "@/app/data";
 
 export function About({
   showHeading = true,
@@ -26,35 +27,10 @@ export function About({
           />
         ) : null}
 
-        {/* Left bigger (JSON) right smaller (highlights) */}
+        {/* Left: Interactive WhatsApp AI Agent Card, Right: About Story & Highlights */}
         <div className="grid items-start gap-12 lg:grid-cols-[1.2fr_0.8fr]">
           <Reveal className="relative">
-            <div
-              className="absolute -inset-4 rounded-3xl bg-gradient-purple opacity-20 blur-2xl"
-              aria-hidden="true"
-            />
-            <div className="relative overflow-hidden rounded-2xl border border-border bg-surface shadow-2xl">
-              <div className="flex items-center justify-between border-b border-border px-5 py-4">
-                <span className="font-mono text-sm text-dim">
-                  ~/whoami.json
-                </span>
-              </div>
-              {/* Bigger font, more padding, more lines */}
-              <div className="space-y-2 px-4 py-5 font-mono text-xs leading-6 text-bright sm:space-y-3 sm:px-6 sm:py-6 sm:text-[15px] sm:leading-7">
-                <p><span className="text-code-fn">&quot;name&quot;</span>: <span className="text-code-str">&quot;{site.name}&quot;</span>,</p>
-                <p><span className="text-code-fn">&quot;role&quot;</span>: <span className="text-code-str">&quot;{site.title}&quot;</span>,</p>
-                <p><span className="text-code-fn">&quot;location&quot;</span>: <span className="text-code-str">&quot;{site.location}&quot;</span>,</p>
-                <p><span className="text-code-fn">&quot;email&quot;</span>: <span className="text-code-str">&quot;{site.email}&quot;</span>,</p>
-                <p><span className="text-code-fn">&quot;focus&quot;</span>: [</p>
-                <p className="pl-8"><span className="text-code-str">&quot;Full-Stack Web Dev&quot;</span>,</p>
-                <p className="pl-8"><span className="text-code-str">&quot;Next.js &amp; React&quot;</span>,</p>
-                <p className="pl-8"><span className="text-code-str">&quot;E-Commerce &amp; APIs&quot;</span>,</p>
-                <p className="pl-8"><span className="text-code-str">&quot;Modern Web Tools&quot;</span></p>
-                <p>],</p>
-                <p><span className="text-code-fn">&quot;available&quot;</span>: <span className="text-code-str">true</span>,</p>
-                <p><span className="text-code-fn">&quot;status&quot;</span>: <span className="text-code-str">&quot;open to work&quot;</span></p>
-              </div>
-            </div>
+            <WhatsAppBotCard />
           </Reveal>
 
           <div className="space-y-6">
